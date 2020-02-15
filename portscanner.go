@@ -69,7 +69,7 @@ func (ps *PortScanner) Start(f, l int, timeout time.Duration) {
 
 func main() {
 	ps := &PortScanner{
-		ip:   "127.0.0.1",
+		ip:   "45.33.49.119",
 		lock: semaphore.NewWeighted(Ulimit()),
 	}
 	ps.Start(1, 65535, 500*time.Millisecond)
