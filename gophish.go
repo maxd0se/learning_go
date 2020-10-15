@@ -1,3 +1,5 @@
+// To crawl a site run the following command: go run gophish.go URL_TO_CRAWL. Include the protocol (http or https)
+
 package main
 
 import (
